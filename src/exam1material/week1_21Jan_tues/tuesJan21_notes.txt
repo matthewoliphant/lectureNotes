@@ -20,6 +20,8 @@ Canvas setup - weekly class material
 
 Ed Discussion
 
+How to take notes
+
 
 ///////////////////////////////////////////////////////
 
@@ -210,29 +212,26 @@ If p Then q
 
 ////////////////////////////////////////////////////////
 
-More if/then logic in programming.
-
-
-
-if (num < 4 || x >= 10) {
-
-    y = 17;
-}
-
---> suppose y is 17 here. What do we know?
+Quiz in Canvas.
     
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /////////////////////////////////////////////////////////
 
-y = 10;
-
-if (num < 4 || x >= 10) {
-
-    y = 17;
-}
-
---> suppose y is 17 here. Can we conclude anything now?
+Second quiz question modification.
 
 
 
