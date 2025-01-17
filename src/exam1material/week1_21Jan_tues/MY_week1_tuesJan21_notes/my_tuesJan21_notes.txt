@@ -302,6 +302,7 @@ What are Ava and Bob?
 What does "neither" mean?
     When is Bob's statement true? 
     When is Bob's statement false? 
+    Is there another way to write Bob's statement?
 
 
 
