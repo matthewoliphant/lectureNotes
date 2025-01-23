@@ -54,7 +54,8 @@ else {
 
 More with knights and knaves.
 
-
+knights: each full statement that they make is true
+knave: each full statement that they make is false
 
 You see two different inhabitants, Ava and Bob.
 
@@ -65,6 +66,7 @@ Bob says, "Neither Ava nor I are knaves."
 
 
 What does "neither" mean?
+Bob: Ava and I are both knights
 
 Rewrite both statements.
 
@@ -72,6 +74,11 @@ Rewrite both statements.
 
 What are Ava and Bob?
 
+Suppose Ava is a knight.  Then Bob must be a knave.  This works since Bob's statment would then be a lie becuase he is not a knight
+
+Suppose instead Ava is a knave.  Then from her statement Bob would be a knight. Bob's statment wouldnt be true becuase Ava is a knave and not a knight
+
+Solution: Ava is a knight. Bob is a knave
 
 
 
@@ -95,11 +102,15 @@ What types are Sarah, Bill, and Mae?
 
 (How might we simplify everything?)
 
+Sarah: Bill is a knight
+Bill: Mae is a knight
+Mae: 
 
+Suppose that sarah is a knight.  Bill must be a knight from her statement.  Then from his statment Mae must be a knight.But Bill would not say Mae is a knave so it does not work
 
+Suppose that Sarah is a knave.  THen from her statment Bill would be be a knave and from his statment Mae is a knave.
 
-
-
+Solution is that all 3 are knaves
 
 ////////////////////////////////////
 
@@ -116,7 +127,7 @@ Unicorn says: "Yesterday was one of my lying days, too."
 What day is it?
 
 
-
+Thursday 
 
 
 ////////////////////////////////
@@ -136,7 +147,7 @@ The second one says: "I'm Tweedledee."
 
 Which is which? What day is it?
 
-
+On every day but sunday becuase one of them is lying they should say the exact same name so it must be sunday and its in order of how they say it.
 
 
 
@@ -144,7 +155,7 @@ Which is which? What day is it?
 //////////////////////////////////
 
 In-class quiz
-
+If Carl is a knight then Diana must be a knight
 
 
 
@@ -165,8 +176,10 @@ The second one says: "I'm Tweedledee!"
 
 Who gets the rattle?
 
+Suppose first twin is telling truth while the second twin is lying. This means tweedlee really owns the rattle and the second twin is not tweedleee but tweedleedumnb.  Which means the rattle belongs to the first twin.
+Suppose the second twin is telling the truth while the first twin is lying.  This means tweedldee does not own the rattle and the second twin is tweedlee.  Thus the first twin tweedledumb owns the rattle. 
 
-
+In both cases the first twin is the owner of the rattle
 
 ///////////////////////////////////////////
 
@@ -260,28 +273,28 @@ AND:
 
 p q  #  p ∧ q
 --------------
-T T  #    
-T F  #    
-F T  #    
-F F  #    
+T T  #  T  
+T F  #   F 
+F T  #   F 
+F F  #   F 
 
 
 OR:
 
 p q  #  p ∨ q
 --------------
-T T  #    
-T F  #    
-F T  #    
-F F  #    
+T T  #    T
+T F  #   T 
+F T  #  T  
+F F  #   F 
 
 
 NOT:
 
 p  # ¬p
 --------
-T  # 
-F  # 
+T  # F
+F  # T
 
 ////////////////////////////////////////////////
 
@@ -299,10 +312,10 @@ Otherwise we have not.
 
 p q  #  p → q
 --------------
-T T  #    
-T F  #    
-F T  #    
-F F  #    
+T T  #    T
+T F  #    F
+F T  #    T
+F F  #    T
 
 /////////////////////////////////////////
 
@@ -317,6 +330,7 @@ Design circuits for:
 ¬(p ∧ (q ∨ r))
 
 p XOR q (with just the gates we've seen, not a specific XOR gate)
+XOR is the same as an or gate however it cannot be both must be an exclusive or
 
 /////////////////////////////////////
 
